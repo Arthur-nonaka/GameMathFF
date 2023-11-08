@@ -25,13 +25,15 @@ body {
 .characters {
     width: 10vh;
     height: 10vh;
-    background-color: brown;
+    transform: scaleX(-1);
     position: absolute;
 }
 
 .enemy {
-    width: 10vh;
-    height: 10vh;
-    background-color: rgb(255, 94, 94);
+    width: 13vh;
+    height: 13vh;
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* transform: scaleX(-1); */
 }
