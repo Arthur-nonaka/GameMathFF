@@ -8,13 +8,14 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .canva {
     margin: 10px;
     width: 80%;
-    height: 80vh;
+    height: 75vh;
     background-color: antiquewhite;
     border: 6px solid rgb(147, 100, 100);
     background-image: url("./jogo/BACKGROUND.png");
@@ -36,4 +37,54 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     /* transform: scaleX(-1); */
+}
+
+.bars {
+    width: 80%;
+    height: 17vh;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.allyAttack {
+    width: 40%;
+    height: inherit;
+    background-color: aqua;
+}
+
+.enemyAttackBorder {
+    width: 40%;
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+.enemyAttackBorderInside {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(151, 140, 218);
+    
+}
+
+.lifeBorder {
+    width: 100px;
+    height: 10%;
+    transform: translateY(-20px);
+    border: 2px solid black;
+
+}
+
+.lifeBar {
+    background-color: green;
+    width: 100px;
+    height: 100%;    
+}
+
+#attackArea {
+    height: 50vh;
+    width: 80%;
+    position: absolute;
+    top: 35vh;
+    left: 10vw;
 }
