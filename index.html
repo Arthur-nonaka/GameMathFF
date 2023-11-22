@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Math Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="canva" id="canva">
-            <div id="attackArea">
-
-            </div>
+      <div class="canva" id="canva">
+        <div id="attackArea"></div>
+      </div>
+      <div class="bars">
+        <div class="allyAttack" id="allyAttack">
+          <div style="margin: 5px">
+            <input id="value1" type="text" disabled="true" size="10" />
+            <input id="operator1" type="text" disabled="true"size="1" />
+            <input id="value2" type="text" disabled="true"size="10" />
+            =
+            <input id="SergioRes"/> <button id="SergioAttack">Atacar</button>
+          </div>
+          <div style="margin: 5px">
+            <input id="value3" type="text" disabled="true" size="10" />
+            <input id="operator2" type="text" disabled="true" size="1"/>
+            <input id="value4" type="text" disabled="true" size="10" />
+            =
+            <input id="BarretoRes"/> <button id="BarretoAttack">Atacar</button>
+          </div>
+          <div style="margin: 5px">
+            <input id="value5" type="text" disabled="true" size="10" />
+            <input id="operator3" type="text" disabled="true" size="1" />
+            <input id="value6" type="text" disabled="true" size="10" />
+            =
+            <input id="ZacariasRes"/> <button id="ZacariasAttack">Curar  </button>
+          </div>
         </div>
-        <div class="bars">
-            <div class="allyAttack">
-
-            </div>
-            <div class="enemyAttackBorder">
-                <div class="enemyAttackBorderInside" id="enemyAttackBorderInside" style="width: 0%;">
-
-                </div>
-            </div>
+        <div class="enemyAttackBorder">
+          <div
+            class="enemyAttackBorderInside"
+            id="enemyAttackBorderInside"
+            style="width: 0%"
+          ></div>
         </div>
+      </div>
     </div>
-    <button id="SergioDamage"> 
-        AAA
-    </button>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

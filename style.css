@@ -48,9 +48,16 @@ body {
 }
 
 .allyAttack {
-    width: 40%;
+    width: 50%;
     height: inherit;
     background-color: aqua;
+    padding: 5px;
+    z-index: 2;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .enemyAttackBorder {
@@ -87,4 +94,8 @@ body {
     position: absolute;
     top: 35vh;
     left: 10vw;
+}
+
+input {
+    height: 20px;
 }
